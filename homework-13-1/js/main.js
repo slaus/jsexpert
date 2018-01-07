@@ -4,10 +4,7 @@
 
     var first, second, total = 0, result = "", elem, id;
 
-    // const elem = document.getElementById(id);
-
     for (var i = 1; i <= cycle; i++) {
-
         if (i == 8 || i == 13) continue;
 
         first = getRndNumber();
@@ -25,7 +22,6 @@
     setResult(((total > 100) ? "<hr>Победа, вы набрали <b>" : "<hr>Вы проиграли, у вас <b>") + total + "</b> очков");
 
     printResult();
-
 
     function getRndNumber() {
         return Math.floor(Math.random() * 6 + 1);
